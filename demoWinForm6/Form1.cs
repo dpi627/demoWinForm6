@@ -1,3 +1,4 @@
+using Serilog;
 using System.Diagnostics;
 
 namespace demoWinForm6
@@ -15,7 +16,8 @@ namespace demoWinForm6
             InitializeComponent();
 
             f = new Form2();
-            
+
+            Log.Information("Form 1 init");
 
             itemCouns = r.Next(3, 6);
             AddLog($"Test Round: {itemCouns}");
