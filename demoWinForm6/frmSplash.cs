@@ -53,8 +53,6 @@ namespace demoWinForm6
             if (circularProgressBar1.Value == circularProgressBar1.Maximum)
             {
                 timer1.Enabled = false;
-                circularProgressBar1.Value = 100;
-                Thread.Sleep(2000);
                 Close();
             }
         }
