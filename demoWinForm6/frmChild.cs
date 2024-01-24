@@ -40,7 +40,7 @@ namespace demoWinForm6
 
             while (progress < 100)
             {
-                var r = new Random().Next(10);
+                var r = new Random().Next(20);
                 Thread.Sleep(r * 100);
                 progress += new Random().Next(r);
 
