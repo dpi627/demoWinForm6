@@ -36,7 +36,7 @@ namespace demoWinForm6
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new frmSplash(true));
-            Application.Run(new Form4());
+            Application.Run(new FormLoading());
 
             //try
             //{

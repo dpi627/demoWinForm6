@@ -154,7 +154,7 @@ namespace demoWinForm6
             }
 
             frm.TopLevel = false;
-            frm.FormBorderStyle = FormBorderStyle.None;
+            //frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
 
             return frm;
