@@ -70,7 +70,7 @@ namespace demoWinForm6
         private async void button3_Click(object sender, EventArgs e)
         {
             // 顯示讀取動畫
-            ShowLoadingAnimation();
+            ToggleLoadingAnimation();
 
             // 使用背景工作執行讀取過程
             await Task.Run(() =>
@@ -95,25 +95,18 @@ namespace demoWinForm6
             });
 
             // 隱藏讀取動畫
-            HideLoadingAnimation();
+            ToggleLoadingAnimation();
         }
 
-        private void ShowLoadingAnimation()
+        private void ToggleLoadingAnimation()
         {
-            // 設定讀取動畫的可見性為 true，這裡假設讀取動畫是名為 loadingAnimation 的 PictureBox 控制項
-            pictureBox1.Visible = true;
-        }
-
-        private void HideLoadingAnimation()
-        {
-            // 設定讀取動畫的可見性為 false，隱藏讀取動畫
-            pictureBox1.Visible = false;
+            pictureBox1.Visible = !pictureBox1.Visible;
         }
 
         private async void button4_Click(object sender, EventArgs e)
         {
             // 顯示讀取動畫
-            ShowLoadingAnimation();
+            ToggleLoadingAnimation();
 
             // 使用背景工作執行讀取過程
             await Task.Run(() =>
@@ -131,7 +124,7 @@ namespace demoWinForm6
             });
 
             // 隱藏讀取動畫
-            HideLoadingAnimation();
+            ToggleLoadingAnimation();
         }
 
         private void ChildForm_ProgressChanged(object sender, int progress)

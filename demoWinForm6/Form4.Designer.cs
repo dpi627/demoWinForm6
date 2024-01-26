@@ -36,24 +36,26 @@
             button3 = new Button();
             progressBar1 = new CustomProgressBar();
             button4 = new Button();
+            faProvider1 = new FontAwesome.WinForms.FaProvider();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlDarkDark;
-            panel1.Location = new Point(93, 12);
+            panel1.Location = new Point(187, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(695, 426);
+            panel1.Size = new Size(601, 426);
             panel1.TabIndex = 0;
             // 
             // button1
             // 
             button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(169, 23);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Load Child Form";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -61,9 +63,9 @@
             // 
             button2.Location = new Point(12, 41);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(169, 23);
             button2.TabIndex = 2;
-            button2.Text = "button2";
+            button2.Text = "Clear Panel";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -108,11 +110,29 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // faProvider1
+            // 
+            faProvider1.Icon = "";
+            faProvider1.IconColor = Color.DodgerBlue;
+            faProvider1.IconPadding = 0;
+            faProvider1.IconSize = 128;
+            faProvider1.ImageListBinding = null;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(12, 128);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 6;
+            button5.Text = "button5";
+            button5.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(progressBar1);
             Controls.Add(button3);
@@ -135,5 +155,7 @@
         private Button button3;
         private CustomProgressBar progressBar1;
         private Button button4;
+        private FontAwesome.WinForms.FaProvider faProvider1;
+        private Button button5;
     }
 }
